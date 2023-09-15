@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "test": "jest --passWithNoTests && npm run update:marks",
+    "test": "jest --coverage --passWithNoTests && npm run update:marks",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test:watch": "jest --watchAll",
     "unit": "jest ./src/",

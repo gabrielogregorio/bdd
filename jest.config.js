@@ -10,6 +10,12 @@ module.exports = {
   },
   testEnvironment: 'node',
   clearMocks: true,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.ts",
+    "!src/**/*.spec.ts"
+  ],
+  "coverageReporters": ["json", "html"],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/dist/', '<rootDir>/src/example/test/'],
   testMatch: ["**/src/**/*.spec.ts", "**/cucumber/step_definitions/**/*.steps.ts",],
 };
