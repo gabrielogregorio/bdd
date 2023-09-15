@@ -2,7 +2,7 @@ Feature: Choose Language
 
     Escolha de uma linguagem
 
-    Scenario: Usuário escolhe linguagem pt-br
+    Scenario: Usuário escolhe linguagem
         Given O usuário escolhe uma linguagem
         When Ele digita "pt"
         Then então deve-se retornar a linguagem "pt"

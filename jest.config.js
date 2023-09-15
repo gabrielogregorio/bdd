@@ -10,7 +10,6 @@ module.exports = {
   },
   testEnvironment: 'node',
   clearMocks: true,
-  "collectCoverage": true,
   "collectCoverageFrom": [
     "src/**/*.ts",
     "!src/**/*.spec.ts"

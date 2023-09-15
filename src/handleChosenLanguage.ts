@@ -1,13 +1,11 @@
-import prompt from 'prompt-sync';
+import { promptUser } from './promptUser';
 import { LanguageEnum } from './types';
 
-export const promptUser = () => prompt()('Your language | Seu idioma (pt or en): ');
-
 export const handleChosenLanguage = (): LanguageEnum => {
-  const chosenOption = promptUser().trim().replace('\n', '');
+  const chosenOption = promptUser('Your language | Seu idioma (pt or en): ').trim().replace('\n', '');
 
   if (!['pt', 'en'].includes(chosenOption)) {
-    throw new Error('invalid response');
+    throw new Error('this language are available');
   }
 
   return chosenOption;
