@@ -17,8 +17,6 @@ defineFeature(feature, (test) => {
       //
     });
 
-    // test #choose-pt#
-    // test #choose-en#
 
     when(/^Ele digita (.*)$/, (language) => {
       const spyUseAuth = jest.spyOn(promptUser, 'promptUser');

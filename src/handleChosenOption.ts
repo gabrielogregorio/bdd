@@ -1,9 +1,9 @@
-import prompt from 'prompt-sync';
 import { LanguageEnum, OptionEnum } from './types';
 import { LanguageLocales } from './locales';
+import { promptUser } from './promptUser';
 
 export const handleChosenOption = (language: LanguageEnum): OptionEnum => {
-  const chosenOption = prompt()(LanguageLocales.typeOption[language]).trim().replace('\n', '');
+  const chosenOption = promptUser(LanguageLocales.typeOption[language]).trim().replace('\n', '');
 
   if (!['1', '2'].includes(chosenOption)) {
     throw new Error(LanguageLocales.typeValidOption[language]);
