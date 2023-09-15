@@ -17,5 +17,5 @@
     "baseUrl": ".",
     "paths": {}
   },
-  "include": ["src/**/*", "cucumber/**/*"]
+  "include": ["src/**/*", "cucumber/**/*.ts"]
 }
