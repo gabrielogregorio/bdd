@@ -24,7 +24,7 @@
     "prepare": "husky install",
     "check": "tsc --noEmit",
     "lint": "eslint -c ./.eslintrc.js --ext '.ts' 'src/**'",
-    "xxx": "jest --config=jest.config.js",
+    "tw": "pnpm test:watch",
     "format": "prettier src/* --write",
     "b": "yarn build"
   },

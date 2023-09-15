@@ -1,6 +1,12 @@
 # BDD estudos
 
 ## Specs
+
+### Utils
+| item | status |
+|------|--------|
+| formatString | [✅](#formatString#)
+
 ### allow choosing language
 
 | language | status   |
