@@ -17,7 +17,10 @@ defineFeature(feature, (test) => {
       //
     });
 
-    when(/^Ele digita "(.*)"$/, (language) => {
+    // test #choose-pt#
+    // test #choose-en#
+
+    when(/^Ele digita (.*)$/, (language) => {
       const spyUseAuth = jest.spyOn(promptUser, 'promptUser');
       spyUseAuth.mockImplementation(() => language);
 
@@ -28,7 +31,7 @@ defineFeature(feature, (test) => {
       }
     });
 
-    then(/^então deve-se retornar a linguagem "(.*)"$/, (languageExpected) => {
+    then(/^então deve-se retornar a linguagem (.*)$/, (languageExpected) => {
       expect(errorCaught).toBeNull();
       expect(lastLanguageChoice).toContain(languageExpected);
     });
