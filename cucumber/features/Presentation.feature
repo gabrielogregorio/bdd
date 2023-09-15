@@ -1,4 +1,4 @@
-Feature: Language Feature
+Feature: Presentation Feature
 
     Para verificar se o usuário recebe a mensagem no idioma definido
 
