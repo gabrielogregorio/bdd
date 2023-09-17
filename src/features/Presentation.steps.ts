@@ -1,6 +1,6 @@
 import { loadFeature, defineFeature } from 'jest-cucumber';
-import { renderPresentation } from '../../src/renderPresentation';
-import { LanguageEnum } from '../../src/types';
+import { renderPresentation } from '../renderPresentation';
+import { LanguageEnum } from '../types';
 
 const feature = loadFeature('./cucumber/features/Presentation.feature');
 

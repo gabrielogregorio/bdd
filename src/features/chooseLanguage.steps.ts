@@ -1,6 +1,6 @@
 import { loadFeature, defineFeature } from 'jest-cucumber';
-import { handleChosenLanguage } from '../../src/handleChosenLanguage';
-import * as promptUser from '../../src/promptUser';
+import { handleChosenLanguage } from '../handleChosenLanguage';
+import * as promptUser from '../promptUser';
 
 const feature = loadFeature('./cucumber/features/chooseLanguage.feature');
 

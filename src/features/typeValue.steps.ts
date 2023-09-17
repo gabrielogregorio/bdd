@@ -1,7 +1,7 @@
 import { loadFeature, defineFeature } from 'jest-cucumber';
-import * as promptUser from '../../src/promptUser';
-import { handleGetMonetaryConversion } from '../../src/handleGetMonetaryConversion';
-import { LanguageEnum, OptionEnum } from '../../src/types';
+import * as promptUser from '../promptUser';
+import { handleGetMonetaryConversion } from '../handleGetMonetaryConversion';
+import { LanguageEnum, OptionEnum } from '../types';
 
 const feature = loadFeature('./cucumber/features/typeValue.feature');
 

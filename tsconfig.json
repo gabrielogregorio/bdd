@@ -17,5 +17,6 @@
     "baseUrl": ".",
     "paths": {}
   },
-  "include": ["src/**/*", "cucumber/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.feature"]
 }
