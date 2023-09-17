@@ -17,7 +17,6 @@ defineFeature(feature, (test) => {
       //
     });
 
-
     when(/^Ele digita (.*)$/, (language) => {
       const spyUseAuth = jest.spyOn(promptUser, 'promptUser');
       spyUseAuth.mockImplementation(() => language);

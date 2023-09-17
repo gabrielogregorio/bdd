@@ -25,6 +25,7 @@
     "check": "tsc --noEmit",
     "lint": "eslint -c ./.eslintrc.js --ext '.ts' 'src/**'",
     "tw": "pnpm test:watch",
+    "jw": "pnpm test:watch",
     "format": "prettier src/* --write",
     "b": "yarn build"
   },
