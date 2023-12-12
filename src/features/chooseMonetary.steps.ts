@@ -3,7 +3,7 @@ import * as promptUser from '../promptUser';
 import { handleChosenOption } from '../handleChosenOption';
 import { LanguageEnum } from '../types';
 
-const feature = loadFeature('./cucumber/features/chooseMonetary.feature');
+const feature = loadFeature('./src/features/chooseMonetary.feature');
 
 defineFeature(feature, (test) => {
   test('Usuário escolhe uma conversão', ({ given, when, then, and }) => {

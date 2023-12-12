@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/no-magic-numbers */
 import { loadFeature, defineFeature } from 'jest-cucumber';
 
-const feature = loadFeature('./cucumber/features/demo.feature');
+const feature = loadFeature('./src/features/demo.feature');
 
 defineFeature(feature, (test) => {
   test('Testando tabelas', ({ given, when, then }) => {

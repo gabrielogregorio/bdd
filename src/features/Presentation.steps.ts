@@ -2,7 +2,7 @@ import { loadFeature, defineFeature } from 'jest-cucumber';
 import { renderPresentation } from '../renderPresentation';
 import { LanguageEnum } from '../types';
 
-const feature = loadFeature('./cucumber/features/Presentation.feature');
+const feature = loadFeature('./src/features/Presentation.feature');
 
 defineFeature(feature, (test) => {
   test('Receber mensagens no idioma definido em português', ({ given, when, then }) => {

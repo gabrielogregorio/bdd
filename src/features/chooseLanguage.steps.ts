@@ -2,7 +2,7 @@ import { loadFeature, defineFeature } from 'jest-cucumber';
 import { handleChosenLanguage } from '../handleChosenLanguage';
 import * as promptUser from '../promptUser';
 
-const feature = loadFeature('./cucumber/features/chooseLanguage.feature');
+const feature = loadFeature('./src/features/chooseLanguage.feature');
 
 let lastLanguageChoice: string | undefined;
 let errorCaught: Error | null = null;
