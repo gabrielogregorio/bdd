@@ -57,7 +57,7 @@ jobs:
           key: ${{ runner.os }}-node-modules-${{ hashFiles('**/pnpm-lock.yaml') }}
 
       - name: running tests and generate coverage
-        run: pnpm run jest:coverage
+        run: pnpm run test
 
   linting:
     needs: install
