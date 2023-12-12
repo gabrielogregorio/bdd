@@ -12,22 +12,15 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "test": "jest --passWithNoTests && npm run update:marks",
+    "test": "jest --passWithNoTests --coverage && pnpm run update:marks",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/index.ts",
     "test:watch": "jest --watchAll",
-    "unit": "jest ./src/",
-    "bdd": "jest ./cucumber/",
-    "test-watch": "test --watch",
     "update:marks": "mark-tested-specs -d ./ -s ./README.md",
     "audit": "npm audit",
-    "jest:coverage": "jest --coverage",
     "prepare": "husky install",
     "check": "tsc --noEmit",
     "lint": "eslint -c ./.eslintrc.js --ext '.ts' 'src/**'",
-    "tw": "pnpm test:watch",
-    "jw": "pnpm test:watch",
-    "format": "prettier src/* --write",
-    "b": "yarn build"
+    "format": "prettier src/* --write"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",

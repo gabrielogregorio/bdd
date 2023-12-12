@@ -43,7 +43,7 @@ echo "\n${Yellow}.....................BUILDING APP........................${NOCO
 pnpm build
 
 echo "\n${Yellow}...............UNIT TEST AND COVERAGE....................${NOCOLOR}"
-pnpm jest:coverage
+pnpm test
 
 
 

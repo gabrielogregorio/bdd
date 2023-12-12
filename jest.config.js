@@ -16,5 +16,5 @@ module.exports = {
   ],
   "coverageReporters": ["json", "html"],
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/dist/', '<rootDir>/src/example/test/'],
-  testMatch: ["**/src/**/*.spec.ts", "**/cucumber/step_definitions/**/*.steps.ts",],
+  testMatch: ["**/src/**/*.spec.ts", "**/*.steps.ts",],
 };
